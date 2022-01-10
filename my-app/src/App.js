@@ -1,3 +1,4 @@
+import "./App.css";
 import { useState } from "react"
 export default function App() {
 
@@ -15,11 +16,13 @@ export default function App() {
     setNumber(0)
     }
 
-    return <div>
+    return <div className="conter">
         <h1>Contador</h1>
         <p>{number}</p>
-        <button onClick={menos}>Menos</button>
-        <button onClick={reset}>Reset</button>
-        <button onClick={mais}>Mais</button>
+        <div>
+        <button onClick={menos} className="button1">Menos</button>
+        <button onClick={reset} className="button1">Reset</button>
+        <button onClick={mais} className="button1">Mais</button>
+        </div>
     </div>
 }
